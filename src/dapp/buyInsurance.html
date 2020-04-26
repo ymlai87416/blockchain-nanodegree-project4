@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item "><a class="nav-link" data-toggle="tab" href="/fundAirline.html">Fund airline</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="/regAirline.html">Register airline</a></li>
+            <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="/buyInsurance.html">Purchase insurance</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="/flightStatus.html">Request flight status</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="/withdraw.html">Withdraw</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div id="display-wrapper" class="top-20">
+        </div>
+
+        <div id="menu_buy_insurance"  class="top-20">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Airline</label>
+                <div class="col-sm-10">
+                    <!--<input type="text" id="airline" class="form-control" />-->
+                    <select id="airline-select" class="form-control">
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Flight</label>
+                <div class="col-sm-10">
+                    <input type="text" id="flight-number" class="form-control">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-4">
+                    <input type="date" id="flight-date" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <input type="time" id="flight-time" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Value</label>
+                <div class="col-sm-10">
+                    <input type="number" id="transfer-value" class="form-control" min="0" value="0" step="0.00001">
+                </div>
+            </div>
+
+            <btn class="btn btn-primary" id="buy-insurance">Buy insurane</btn>
+        </div>
+    </main>
+
+</body>
+
+</html>
